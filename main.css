@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 62.5;
+  background-color: #090b1a;
+}
+
+.outer {
+  height: 98vh;
+}
+
+.centeral {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 70%;
+  height: 60%;
+  background-color: #1b1938;
+  text-align: justify;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.container__text {
+  left: 2.5%;
+  width: 45%;
+  padding: 2rem;
+}
+
+.inner {
+  position: absolute;
+}
+
+h1,
+h5 {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  padding-top: 0.5rem;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  padding: 1.5rem 0;
+  line-height: 2rem;
+  font-size: 0.9rem;
+}
+
+.heads {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.ins {
+  color: #aa5cdb;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-family: "Leaend Deca", sans-serif;
+}
+
+.stats {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.container__pic {
+  right: 0;
+  left: 50%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(170, 92, 219, 0.5)), to(rgba(170, 92, 219, 0.5))), url(./images/image-header-desktop.jpg);
+  background: linear-gradient(rgba(170, 92, 219, 0.5), rgba(170, 92, 219, 0.5)), url(./images/image-header-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 1260px) {
+  .container__text {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  h5 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    height: 85%;
+    width: 90%;
+  }
+  .container__pic {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 35%;
+  }
+  .container__text {
+    width: 100%;
+    top: 32%;
+    bottom: 0;
+    text-align: center;
+  }
+  .stats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=main.css.map */
